@@ -1,0 +1,42 @@
+.bootstrap__footer {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  background-color: cornflowerblue;
+  height: 50px;
+  width: 100%;
+}
+
+.bootstrap__footer--label {
+  font-size: 20px;
+  font-family: "American Typewriter";
+  color: chocolate;
+  font-weight: bold;
+}
+
+$breakpoint-small: 400px;
+$breakpoint-large: 640px;
+
+@media (max-width: $breakpoint-small) {
+  .bootstrap__footer {
+    padding-top: 10px;
+    height: 30px;
+    min-width: 102px
+  }
+
+  .bootstrap__footer--label {
+    font-size: x-small;
+  }
+}
+
+@media (min-width: $breakpoint-small) and (max-width: $breakpoint-large) {
+  .bootstrap__footer {
+    padding-top: 15px;
+    height: 45px;
+  }
+
+  .bootstrap__footer--label {
+    font-size: medium;
+  }
+}

@@ -1,0 +1,71 @@
+@import "../../../styles.scss";
+
+.card__layout {
+  height: 200px;
+  width: 200px;
+  margin: 15px;
+  border-radius: 10px;
+}
+
+.card__details {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-primary {
+  background-color: brown !important;
+}
+
+$breakpoint-small: 400px;
+$breakpoint-large: 640px;
+
+@media (max-width: $breakpoint-small) {
+  .card__layout {
+    height: 100px;
+    width: 100px;
+    margin: 1px;
+    border-radius: 1px;
+  }
+
+  .btn-group-toggle {
+    margin-top: -5px;
+  }
+
+  .btn-primary {
+    font-size: x-small;
+  }
+
+  .card-button__title {
+    font-size: x-small;
+  }
+
+  .card-button__title {
+    font-size: x-small;
+  }
+}
+
+@media (min-width: $breakpoint-small) and (max-width: $breakpoint-large) {
+
+  .card__layout {
+    height: 150px;
+    width: 150px;
+    margin: 3px;
+    border-radius: 1px;
+  }
+
+  .btn-group-toggle {
+    margin-top: -2px;
+  }
+
+  .btn-primary {
+    font-size: small;
+  }
+
+  .card-button__title {
+    font-size: small;
+  }
+
+  .card-button__title {
+    font-size: small;
+  }
+}

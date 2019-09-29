@@ -1,0 +1,9 @@
+<app-bootstrap-template>
+  <div class="cards__layout">
+    <div *ngFor="let card of cards; let index = index">
+      <div>
+        <app-card [cardButtonTitle]="card.name" [cardButtonLabel]="'Lender' + index"></app-card>
+      </div>
+    </div>
+  </div>
+</app-bootstrap-template>

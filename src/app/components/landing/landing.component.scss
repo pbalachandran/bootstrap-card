@@ -1,0 +1,25 @@
+.cards__layout {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  max-width: 1024px;
+  width: 100%;
+}
+
+$breakpoint-small: 400px;
+$breakpoint-large: 640px;
+
+@media (max-width: $breakpoint-small) {
+  .cards__layout {
+    max-width: 400px;
+    width: 100%;
+  }
+}
+
+@media (min-width: $breakpoint-small) and (max-width: $breakpoint-large) {
+  .cards__layout {
+    max-width: 640px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,42 @@
+.bootstrap__header {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  background-color: cornflowerblue;
+  height: 150px;
+  width: auto;
+}
+
+.bootstrap__header--label {
+  font-size: 30px;
+  font-family: "American Typewriter";
+  color: black;
+  font-weight: bold;
+}
+
+
+$breakpoint-small: 400px;
+$breakpoint-large: 640px;
+
+@media (max-width: $breakpoint-small) {
+  .bootstrap__header {
+    padding-top: 10px;
+    height: 40px;
+    min-width: 102px;
+  }
+
+  .bootstrap__header--label {
+    font-size: x-small;
+  }
+}
+
+@media (min-width: $breakpoint-small) and (max-width: $breakpoint-large) {
+  .bootstrap__header {
+    padding-top: 15px;
+    height: 45px;
+  }
+
+  .bootstrap__header--label {
+    font-size: medium;
+  }
+}
